@@ -1,0 +1,15 @@
+nav.navbar li, nav.navbar ul, nav.navbar img {
+    display: inline-block;
+}
+
+nav.navbar img {
+    width: 300px;
+    margin: 10px;
+}
+
+nav.navbar li {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+}

@@ -1,15 +1,66 @@
-nav.navbar li, nav.navbar ul, nav.navbar img {
-    display: inline-block;
+div.divnavbar {
+    position: relative;
+    left: 50%;
+}
+
+nav.navbar {
+    position: relative;
+    left: -400px;
+    display: block;
+    height: 128px;
+    width: 800px;
+    background-color: darkgrey;
 }
 
 nav.navbar img {
+    position: absolute;
     width: 300px;
     margin: 10px;
 }
 
+nav.navbar ul {
+    position: relative;
+    left: 350px;
+    top: 40%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
 nav.navbar li {
     float: left;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 1em;
+    margin: auto;
+    padding: 0;
 }
+
+nav.navbar li a {
+    display: block;
+    width: 100px;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    background-color: darkslategrey
+}
+
+nav.navbar li a:hover {
+    background-color:rgb(66, 110, 110);
+}
+
+nav.navbar li ul li a {
+    background-color: darkgreen;
+}
+
+nav.navbar li ul {
+    display: none;
+    position: sticky;
+}
+
+nav.navbar li:hover ul {
+    display: block;
+}
+
+nav.navbar li:hover ul li {
+    float: none;
+}
+
